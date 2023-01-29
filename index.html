@@ -1,0 +1,213 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/08e293054a.js" crossorigin="anonymous"></script>
+ </head>
+ <body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <h1><span>P</span>riyanshi.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>  </p>
+            <h1>Hi, I'm <span>Priyanshi Sethi</span></h1>
+        </div>
+    </div>
+ </div>  
+ <!-- ------------about------------- -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Formal passport.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>A self motivated individual with in-depth knowledge of languages and development tools. In person I am very jolly and can't trick out situations easily. Ability to be sensitive and smart at the same time.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>C, C++, Java, Python</li>
+                        <li><span>Web development</span><br>HTML, CSS, JavaScipt</li>
+                        <li><span>Database Management</span><br>SQL</li>
+                        <li><span>Others</span><br>OOPs, Operating System, Data Structure</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Feb 2022 - July 2022</span><br>Performance Engineer in LoadRunner and Java at Cognizant</li>
+                        <li><span>Aug 2022 - Present</span><br>Software Engineer in Ruby on rails and Ember at FreshWorks</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <!-- <ul>
+                        <li><span>2016</span><br>Secondary Education from Marthoma,Sihora.</li>
+                        <li><span>2018</span><br>Higher Secondary Education from Marthoma,Sihora.</li>
+                        <li><span>2022</span><br>Engineering from AITR,Indore.</li>
+                    </ul> -->
+                    <table border="1">
+                        <thead>
+                          <tr>
+                            <th><span>Year</span></th>
+                            <th><span>Degree/Certificate</span></th>
+                            <th><span>Institute</span></th>
+                            <th><span>CPI/%</span></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2018-2022</td>
+                            <td>B.Tech</td>
+                            <td>Acropolis Institute of Technology and Research,Indore</td>
+                            <td>8.7</td>
+                          </tr>
+                          <tr>
+                            <td>2018</td>
+                            <td>CBSE(XII)</td>
+                            <td>Mar Thoma Gram Jyoti School,Sihora</td>
+                            <td>84.2</td>
+                          </tr>
+                          <tr>
+                            <td>2016</td>
+                            <td>CBSE(X)</td>
+                            <td>Mar Thoma Gram Jyoti School,Sihora</td>
+                            <td>8.1</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+<!-- --------------services----------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-snowflake"></i>
+                <h2>Web Design</h2>
+                <p>The design of websites that are displayed on the internet.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Competitive Coding</h2>
+                <p>To write source code of computer programs which are able to solve given problems.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/FoodVlogging.jpg">
+                <div class="layer">
+                    <h3>Food Vlogging Site</h3>
+                    <p>Food blogging is a feature of food journalism interlinking a gourmet interest in food, blog writing, and food photography.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Emojify.jpg">
+                <div class="layer">
+                    <h3>Emojify</h3>
+                    <p>Expressing a thought/emotion as emojis rather than text.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/VirtualGuide1.jpg">
+                <div class="layer">
+                    <h3>Virtual Guide</h3>
+                    <p>Guide narrating to a person using camera.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>            
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>    
+</div>
+<!-- --------------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> priyanshisethi0303@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91-8319085894</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/priyanshi-sethi-8a6a12172"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/priyanshi.sethi?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.snapchat.com/8urP5tkY"><i class="fa-brands fa-snapchat"></i></a>
+                </div>
+                <a href="images/Priyanshi_Sethi_new.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Priyanshi</p>
+    </div>
+</div>
+
+
+
+ <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+         for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+         }
+         event.currentTarget.classList.add("active-link");
+         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+ </body>
+ </html>      
